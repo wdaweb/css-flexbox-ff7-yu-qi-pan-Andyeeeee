@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+
+
+        }
+
+        .box2 {
+            width: 500px;
+            height: 500px;
+            outline: 1px solid rgb(255, 255, 255);
+            outline-offset: -1px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 450px;
+            outline: 1px solid rgb(255, 255, 255);
+            outline-offset: -1px;
+            margin: auto;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+        }
+
+
+        .box {
+            width: 400px;
+            height: 50px;
+            display: flex;
+            outline: 1px solid rgb(255, 255, 255);
+            outline-offset: -1px;
+            position: relative;
+        }
+
+        .boxtr1 {
+            width: 400px;
+            height: 50px;
+            outline: 1px solid rgb(255, 255, 255);
+            outline-offset: -1px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box1-tr1 {
+            width: 50px;
+            height: 50px;
+            /* background: green; */
+            outline: 1px solid rgb(255, 255, 255);
+            outline-offset: -1px;
+        }
+
+        .b5 {
+            width: 200px;
+            outline: 1px solid rgba(255, 255, 255, 0);
+        }
+
+        .b3 {
+            outline: 1px solid rgba(255, 255, 255, 0);
+        }
+
+        .box-card {
+            width: 430px;
+            height: 30px;
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: rgba(52, 142, 221, 0.508); */
+            /* background-color: #333; */
+            /* background-color: antiquewhite; */
+        }
+
+        .box-card2 {
+            width: 330px;
+            height: 30px;
+            position: absolute;
+            left: 36px;
+            top: -15px;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: rgba(250, 235, 215, 0.448); */
+
+            /* background-color: rgba(52, 142, 221, 0.508); */
+            /* background-color: #333; */
+            /* background-color: antiquewhite; */
+        }
+
+        .card {
+            width: 30px;
+            height: 30px;
+            outline: 1px solid rgb(255, 255, 255);
+            outline-offset: -1px;
+            border-radius: 50%;
+            line-height: 30px;
+            background-color: #333;
+            z-index: 1;
+        }
+
+        .red {
+            color: rgb(10, 194, 255);
+        }
+
+        .black {
+            color: rgb(10, 255, 173);
+        }
+
+        .re {
+            position: relative;
+        }
+
+        .re::after {
+            content: '';
+            width: 70px;
+            height: 70px;
+            /* background-color: antiquewhite; */
+            border-bottom: white 1px solid;
+            border-right: white 1px solid;
+            position: absolute;
+            left: 15px;
+            top: -35px;
+            transform: rotatez(45deg);
+        }
+
+        .re::before {
+            content: '';
+            width: 70px;
+            height: 70px;
+            /* background-color: antiquewhite; */
+            border-bottom: white 1px solid;
+            border-right: white 1px solid;
+            position: absolute;
+            left: 15px;
+            top: 64px;
+            transform: rotatez(225deg);
+        }
+
+        .text {
+            writing-mode: vertical-lr;
+            color: white;
+            font-size: 20px;
+        }
+
+        .all-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-box">
+        <div class="text">
+            棋盤裡，車無輪，馬無韁，叫聲將軍堤防堤防
+        </div>
+        <div class="box2">
+            <div class="box1">
+                <div class="black">
+                    <div class="box">
+                        <div class="box-card">
+                            <div class="card">車</div>
+                            <div class="card">馬</div>
+                            <div class="card">象</div>
+                            <div class="card">士</div>
+                            <div class="card">將</div>
+                            <div class="card">士</div>
+                            <div class="card">象</div>
+                            <div class="card">馬</div>
+                            <div class="card">車</div>
+                        </div>
+
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1 re"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+
+                    </div>
+
+                    <div class="box">
+
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="box-card2">
+                            <div class="card">包</div>
+                            <div class="card">包</div>
+
+                        </div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-card">
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+
+                        </div>
+
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box1-tr1 b5">楚河</div>
+                    <div class="box1-tr1 b5">漢界</div>
+
+                </div>
+                <div class=" red">
+                    <div class="box">
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-card">
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+                            <div class="card">卒</div>
+
+                        </div>
+
+
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="box-card2">
+                            <div class="card">包</div>
+                            <div></div>
+                            <div class="card">包</div>
+
+                        </div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1 re"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-card" style="top:32px">
+                            <div class="card">車</div>
+                            <div class="card">馬</div>
+                            <div class="card">象</div>
+                            <div class="card">士</div>
+                            <div class="card">將</div>
+                            <div class="card">士</div>
+                            <div class="card">象</div>
+                            <div class="card">馬</div>
+                            <div class="card">車</div>
+                        </div>
+
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+                        <div class="box1-tr1"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="text">
+            畫書裡，龍不吟，虎不嘯，小小書僮可笑可笑
+        </div>
+    </div>
+</body>
+
+</html>
